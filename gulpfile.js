@@ -126,7 +126,7 @@ gulp.task("pug", function () {
         },
       })
     )
-    .pipe(gulp.dest("./www"));
+    .pipe(gulp.dest("./"));
 });
 
 // Creates a UMD and ES module bundle for each of our
