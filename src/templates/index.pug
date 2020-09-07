@@ -112,8 +112,8 @@ html
               span(v-if="result.dateAdded" )
                 | Seit: {{ result.dateAdded }}
             .mdl-card__menu
-              button.mdl-button.mdl-button--icon.mdl-js-button.mdl-js-ripple-effect
-                a(v-if="result.url" :href="result.url")
+              a(v-if="result.url" :href="result.url" target="_blank")
+                button.mdl-button.mdl-button--icon.mdl-js-button.mdl-js-ripple-effect
                   i.material-icons
                     | share
       footer.mdl-mini-footer.page-footer
