@@ -1,6 +1,9 @@
-# LUKB DEVCADEMY - Nice2Know Session
+# ch.tomenz.wishlist
 
-This project is for know-how transfer purposes of the LUKB DEVCADEMY to other LUKB employees.
+This is Tom's personal wishlist site..
+
+- Hosting: Github pages
+- Data: From Google Sheets over https://sheet.best/dashboard/sheets
 
 ## Getting started
 
@@ -10,13 +13,9 @@ cd <ThisRepo>
 npm i
 ```
 
-To run the project simply open the `index.html` file in a folder.
-To develop with livereload you can run:
+For local development start:
 
 ```bash
-npm run start
+npm run dev
+``
 ```
-
-### Reveal.js
-
-The full reveal.js documentation is available at [revealjs.com](https://revealjs.com).
