@@ -1,0 +1,95 @@
+{
+  "name": "ch.lukb.devcademy.nice2know",
+  "version": "1.0.0",
+  "description": "Nice2Know Devcademy Presentation based on reveal.js",
+  "author": "Tom Enz <tom.enz@lukb.ch>",
+  "homepage": "https://lukb.ch",
+  "main": "dist/reveal.js",
+  "module": "dist/reveal.esm.js",
+  "license": "MIT",
+  "scripts": {
+    "reveal-test": "gulp test",
+    "reveal-build": "gulp",
+    "dev": "gulp serve",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "keywords": [
+    "reveal",
+    "slides",
+    "presentation"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@rollup/plugin-babel": "^5.0.2",
+    "@rollup/plugin-commonjs": "^12.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-transform-html-import-to-string": "0.0.1",
+    "colors": "^1.4.0",
+    "core-js": "^3.6.5",
+    "glob": "^7.1.6",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-header": "^2.0.9",
+    "gulp-sass": "^4.0.2",
+    "gulp-tap": "^2.0.0",
+    "gulp-zip": "^5.0.1",
+    "marked": "^1.1.0",
+    "rollup": "^2.10.9",
+    "rollup-plugin-terser": "^5.3.0",
+    "yargs": "^15.1.0"
+  },
+  "browserslist": "> 0.5%, IE 11, not dead",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "sourceType": "module",
+      "allowImportExportEverywhere": true
+    },
+    "globals": {
+      "module": false,
+      "console": false,
+      "unescape": false,
+      "define": false,
+      "exports": false
+    },
+    "rules": {
+      "curly": 0,
+      "eqeqeq": 2,
+      "wrap-iife": [
+        2,
+        "any"
+      ],
+      "no-use-before-define": [
+        2,
+        {
+          "functions": false
+        }
+      ],
+      "new-cap": 2,
+      "no-caller": 2,
+      "dot-notation": 0,
+      "no-eq-null": 2,
+      "no-unused-expressions": 0
+    }
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "gulp-pug": "^4.0.1",
+    "mustache": "^4.0.1",
+    "node-static": "^0.7.11",
+    "pug": "^3.0.0"
+  }
+}

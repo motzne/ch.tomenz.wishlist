@@ -1,0 +1,124 @@
+doctype html
+html 
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    title="Tom's Wishlist"
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700|Material+Icons')
+    link(rel='stylesheet' href='https://code.getmdl.io/1.3.0/material.grey-orange.min.css')
+    link(rel='apple-touch-icon', sizes='57x57', href='https://tomenz.ch/static/fav/apple-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='https://tomenz.ch/static/fav/apple-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='https://tomenz.ch/static/fav/apple-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='https://tomenz.ch/static/fav/apple-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='https://tomenz.ch/static/fav/apple-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='https://tomenz.ch/static/fav/apple-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='https://tomenz.ch/static/fav/apple-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='https://tomenz.ch/static/fav/apple-icon-152x152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='https://tomenz.ch/static/fav/apple-icon-180x180.png')
+    link(rel='icon', type='image/png', sizes='192x192', href='https://tomenz.ch/static/fav/android-icon-192x192.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='https://tomenz.ch/static/fav/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='96x96', href='https://tomenz.ch/static/fav/favicon-96x96.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='https://tomenz.ch/static/fav/favicon-16x16.png')
+    link(rel='manifest', href='https://tomenz.ch/static/fav/manifest.json')
+    meta(name='msapplication-TileColor', content='#ffffff')
+    meta(name='msapplication-TileImage', content='https://tomenz.ch/static/fav/ms-icon-144x144.png')
+    meta(name='theme-color', content='#ffffff')
+    script(src='https://sbt.0soft.dev/sheet-best-templates.min.js')
+    style.
+
+      main, footer {
+        font-family: "Roboto Mono", monospace;
+        font-weight: 300;
+      }
+      .main-bg {
+        background: #fafafa;
+      }
+      .te-logo {
+        width: 50px;
+        height: 50px;
+        padding-right: 20px;
+      }
+      .heart-icon {
+        color: #f44336;
+        font-size: 16px;
+      }
+      .code-icon {
+        font-size: 16px;
+        padding-right: 8px;
+      }
+      .page-footer {
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      .wishlist-card > .mdl-card__actions {
+        display: flex;
+        box-sizing:border-box;
+        align-items: center;
+      }
+      .wishlist-card > .media-card {
+        height: 100px;
+        background: none; 
+        display: flex;
+        box-sizing:border-box;
+        align-items: center;
+        position: relative;
+
+      }
+       .wishlist-card > .card-actions {
+        font-size: 12px;
+        color: grey;
+      }
+      .wishlist-card > .media-card > .media-img {
+        height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto 
+      }
+
+  body
+    .mdl-layout.mdl-layout--fixed-header.mdl-js-layout.main-bg
+      header.mdl-layout__header.mdl-layout__header--scroll.mdl-color--grey-100.mdl-color-text--grey-800
+        .mdl-layout__header-row.header-content
+          a(href="https://tomenz.ch")
+            img.te-logo(src="data:image/png;base64,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")
+          span.mdl-layout-title Tom's Wishlist
+          .mdl-layout-spacer
+      main.mdl-layout__content.mdl-grid(data-sheet-best='https://sheet.best/api/sheets/00be092c-deab-4d87-a402-5398bddd0d4d')
+        .mdl-cell.mdl-cell--6-col
+          .wishlist-card.mdl-card.mdl-shadow--2dp
+            .mdl-card__title
+              h4
+                | {{ brand }}<br>
+                | {{ name }}
+            .mdl-card__supporting-text
+              | {{ description }}
+            .mdl-card__media.media-card
+              | <img class="media-img"  src="{{ imgurl }}" alt="-">
+            .mdl-card__actions.mdl-card--border.card-actions
+              span
+                | {{ approx-price }}
+              .mdl-layout-spacer
+              span
+                | Seit: {{ date-added }}
+            .mdl-card__menu
+              button.mdl-button.mdl-button--icon.mdl-js-button.mdl-js-ripple-effect
+                | <a href="{{ url }}"><i class="material-icons">share</i></a>
+
+      footer.mdl-mini-footer.page-footer
+        .mdl-layout__footer-row.mdl-mega-footer__middle-section.footer-icons
+          i.material-icons.code-icon
+            | code
+          | with 
+          i.material-icons.heart-icon
+            | favorite
+          | in Lucerne, Switzerland
+    script(defer='', src='https://code.getmdl.io/1.3.0/material.min.js')
+    script.
+      var imgs = document.querySelectorAll("img");
+      imgs.forEach(function(img) {
+        var oldVal = img.getAttribute('src');
+        console.log(oldVal);
+        img.setAttribute('src', oldVal + newVal);
+      });
+
