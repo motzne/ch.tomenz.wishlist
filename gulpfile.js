@@ -21,7 +21,7 @@ const connect = require("gulp-connect");
 const autoprefixer = require("gulp-autoprefixer");
 const pug = require("gulp-pug");
 
-const root = yargs.argv.root || "www";
+const root = yargs.argv.root || ".";
 const port = yargs.argv.port || 8000;
 
 const banner = `/*!
